@@ -1,0 +1,57 @@
+.wrap__header
+	height: 100px
+	background-color: $main_bg
+	margin-bottom: 30px
+	header
+		height: 100%
+		max-width: 1150px
+		margin: 0 auto
+		position: relative
+.logo
+	background: url("layout/images/logo-min.png") no-repeat
+	width: 50px
+	height: 45px
+	display: inline-block
+	position: absolute
+	top: 25px
+	left: 40px
+.share
+	position: relative
+	top: 30%
+	li
+		display: inline-block
+		margin-right: 21px
+		a
+			border-radius: 50%
+			overflow: hidden
+			display: inline-block
+			cursor: pointer
+			background-image: url("layout/images/share.png")
+			width: 40px
+			height: 40px
+		.vk
+			background-position: -50px 41px
+			&:hover
+				background-position: 142px 1px
+		.tw
+			background-position: -102px 41px
+			&:hover
+				background-position: 90px 1px
+		.fa
+			background-position: 1px 41px
+			&:hover
+				background-position: 1px 1px
+		.gi
+			background-position: 39px 41px
+			&:hover
+				background-position: 39px 1px
+#touch-menu
+	display: none
+	background: url(layout/images/touch__menu.png) no-repeat
+	background-position: 8px 10px
+	border-radius: 0
+	position: absolute
+	right: 30px
+	top: 11px
+	width: 40px
+	height: 40px
