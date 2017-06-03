@@ -1,11 +1,12 @@
 var gulp = require('gulp');
 		sass = require('gulp-sass');
 		pug = require('gulp-pug');
+		browserSync = require('browser-sync');
 
 gulp.task('sass', function(){
 	gulp.src('layout/sass/*.sass')
 		.pipe(sass().on('error', sass.logError))
-		.pipe(gulp.dest(''));
+		.pipe(gulp.dest('layout'));
 });
 
 gulp.task('pug', function() {
@@ -13,7 +14,7 @@ gulp.task('pug', function() {
   	.pipe(pug({
   		pretty: true
   	}))
-	.pipe(gulp.dest(''));
+	.pipe(gulp.dest('layout'));
 });
 
 gulp.task('watch', function(){
@@ -22,3 +23,17 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default', ['pug', 'sass', 'watch']);
+
+gulp.task('browser-sync', function () {
+  var files = [
+    'layout/*.html',
+    'layout/*.css',
+    'layout/js/*.js'
+  ];
+  
+  browserSync.init(files, {
+    server: {
+      baseDir: './app'
+    }
+  });
+});
