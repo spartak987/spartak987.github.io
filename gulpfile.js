@@ -6,7 +6,7 @@ var gulp = require('gulp');
 gulp.task('sass', function(){
 	gulp.src('layout/sass/*.sass')
 		.pipe(sass().on('error', sass.logError))
-		.pipe(gulp.dest('layout'));
+		.pipe(gulp.dest(''));
 });
 
 gulp.task('pug', function() {
@@ -14,7 +14,7 @@ gulp.task('pug', function() {
   	.pipe(pug({
   		pretty: true
   	}))
-	.pipe(gulp.dest('layout'));
+	.pipe(gulp.dest(''));
 });
 
 gulp.task('watch', function(){
