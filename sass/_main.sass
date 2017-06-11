@@ -26,9 +26,6 @@ nav
 		&:hover
 			background-color: #3ba8c0
 			color: #fff
-.nav__contacts ul
-	// position: absolute
-	// top: 200px
 .top__nav
 	margin-bottom: 20px
 .nav__contacts
@@ -42,34 +39,46 @@ nav
 			a
 				position: relative
 				display: block
-				padding: 15px 0 10px 30px
+				padding: 15px 0 10px 7px
 				text-decoration: none
 				color: #fff
 				background-position: 0 0
 				cursor: pointer
 				&:hover
 					color: black
-				i
-					display: inline-block
-					position: absolute
-					left: 5px
-					top: 15.5px
-					background-image: url("images/contakt.png")
-					width: 21px
-					height: 21px
-					&.s__mail
-						background-position: 0 0
-						top: 14px
-						left: 4px
-					&.s__phone
-						background-position: 0 -34px
-						top: 3px
-						left: 4px
-						height: 27px
-					&.s__skype
-						background-position: 0 21px
-						top: 9px
-						left: 4px
+			.s__mail:before
+				background-image: url("images/contakt.png")
+				background-position: 0 0
+				position: relative
+				top: 2px
+				content: " "
+				width: 21px
+				height: 21px
+				display: inline-block
+				vertical-align: bottom
+				margin-right: 5px
+			.s__phone:before
+				background-image: url("images/contakt.png")
+				content: " "
+				width: 21px
+				height: 21px
+				display: inline-block
+				vertical-align: bottom
+				margin-right: 5px
+				background-position: 0 -39px
+				top: 3px
+				left: 4px
+			.s__skype:before
+				background-image: url("images/contakt.png")
+				content: " "
+				width: 21px
+				height: 21px
+				display: inline-block
+				vertical-align: bottom
+				margin-right: 5px
+				background-position: 0 21px
+				top: 9px
+				left: 4px
 		.fa-envelope-o
 		.mail
 			background-color: #41b9d4

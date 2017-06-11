@@ -193,34 +193,46 @@ nav a {
       .nav__contacts ul li a {
         position: relative;
         display: block;
-        padding: 15px 0 10px 30px;
+        padding: 15px 0 10px 7px;
         text-decoration: none;
         color: #fff;
         background-position: 0 0;
         cursor: pointer; }
         .nav__contacts ul li a:hover {
           color: black; }
-        .nav__contacts ul li a i {
-          display: inline-block;
-          position: absolute;
-          left: 5px;
-          top: 15.5px;
-          background-image: url("images/contakt.png");
-          width: 21px;
-          height: 21px; }
-          .nav__contacts ul li a i.s__mail {
-            background-position: 0 0;
-            top: 14px;
-            left: 4px; }
-          .nav__contacts ul li a i.s__phone {
-            background-position: 0 -34px;
-            top: 3px;
-            left: 4px;
-            height: 27px; }
-          .nav__contacts ul li a i.s__skype {
-            background-position: 0 21px;
-            top: 9px;
-            left: 4px; }
+      .nav__contacts ul li .s__mail:before {
+        background-image: url("images/contakt.png");
+        background-position: 0 0;
+        position: relative;
+        top: 2px;
+        content: " ";
+        width: 21px;
+        height: 21px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 5px; }
+      .nav__contacts ul li .s__phone:before {
+        background-image: url("images/contakt.png");
+        content: " ";
+        width: 21px;
+        height: 21px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 5px;
+        background-position: 0 -39px;
+        top: 3px;
+        left: 4px; }
+      .nav__contacts ul li .s__skype:before {
+        background-image: url("images/contakt.png");
+        content: " ";
+        width: 21px;
+        height: 21px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 5px;
+        background-position: 0 21px;
+        top: 9px;
+        left: 4px; }
     .nav__contacts ul .mail {
       background-color: #41b9d4; }
     .nav__contacts ul .phone {
@@ -403,12 +415,6 @@ nav a {
       text-align: center; }
       .wrap__main .nav__contacts li:first-child {
         display: none; }
-      .wrap__main .nav__contacts li .s__mail {
-        left: 10px; }
-      .wrap__main .nav__contacts li .s__phone {
-        left: 40px; }
-      .wrap__main .nav__contacts li .s__skype {
-        left: 80px; }
   .wrap__main .top__nav {
     display: none;
     box-shadow: 1px 3px 9px 1px rgba(13, 16, 7, 0.35);
@@ -421,11 +427,13 @@ nav a {
   .wrap__footer footer a {
     margin-left: 170px; } }
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 820px) {
   .wrap__main .nav__contacts li {
     width: 100%; }
   .worksheet__list {
-    margin: 10px 10px 0 0; } }
+    margin: 10px 10px 0 0; }
+  .nav__contacts ul li a {
+    padding: 15px 0 10px 0; } }
 
 @media screen and (max-width: 650px) {
   .wrap__main .contact {
@@ -480,8 +488,10 @@ nav a {
     margin-bottom: 65px; }
     .nav__contacts ul {
       border-radius: 0; }
-    .nav__contacts li {
-      display: inline-block;
-      width: 300px; }
-      .nav__contacts li:first-child {
-        display: none; } }
+      .nav__contacts ul li {
+        display: inline-block;
+        width: 300px; }
+        .nav__contacts ul li:first-child {
+          display: none; }
+        .nav__contacts ul li a {
+          padding-left: 13px; } }
