@@ -187,13 +187,14 @@ nav a {
   margin-bottom: 90px; }
   .nav__contacts ul {
     border-radius: 5px;
-    overflow: hidden; }
+    overflow: hidden;
+    width: 241px; }
     .nav__contacts ul li {
       color: #fbfcfd; }
       .nav__contacts ul li a {
         position: relative;
         display: block;
-        padding: 15px 0 10px 7px;
+        padding: 15px 0 10px 5px;
         text-decoration: none;
         color: #fff;
         background-position: 0 0;
@@ -382,7 +383,7 @@ nav a {
   .contact {
     width: 950px; } }
 
-@media screen and (min-width: 321px) and (max-width: 900px) {
+@media screen and (min-width: 321px) and (max-width: 915px) {
   .wrap__header {
     margin-bottom: 50px; }
     .wrap__header .share {
